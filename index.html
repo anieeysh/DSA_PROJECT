@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cure Hospital - Patient Queue</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🏥 Cure Hospital</h1>
+
+        <!-- Patient Registration Form -->
+        <div class="form-container">
+            <h2>Add a Patient</h2>
+            <input type="text" id="name" placeholder="Patient Name" required>
+            <input type="number" id="age" placeholder="Age" required>
+            <input type="text" id="address" placeholder="Address">
+            <input type="tel" id="phone" placeholder="Phone Number">
+            <input type="text" id="bloodgroup" placeholder="Blood Group">
+            <input type="number" id="reg" placeholder="Registration No." required>
+            <input type="number" id="priority" placeholder="Disease Number (Priority)" required>
+            <button onclick="addPatient()">Add Patient</button>
+        </div>
+
+        <!-- Patient List -->
+        <div class="list-container">
+            <h2>Priority-wise Appointments</h2>
+            <ul id="patientList"></ul>
+            <button class="delete-btn" onclick="deletePatient()">Delete Highest Priority</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
